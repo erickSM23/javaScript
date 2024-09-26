@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>aprendendo e testando o DOM</title>
     <style>
         body {
-            background-color: white;
+            background-color: blue;
+            color: gold;
             font-size: 1.5em;
         }
     </style>
 </head>
 <body>
-    <h1>iniciando estudos de DOM</h1>
-    
-    <p id="PG">aqui vai o resultado</p>
-
-    <div>click em mim</div>
-    
-    <p>aprendendo a usar <strong>DOM</strong> em javaScript</p>
-    
+    <h1>iniciando estudos DOM</h1>
+    <p id="ppp">aqui vai o resultado</p>
+    <p>aprendendo a usar o dom em javaScript</p>
+    <div id="msg">click em mim</div>
     <script>
-        var paragrafo = window.document.querySelector('p#PG')
-        paragrafo.style.color = 'blue'   
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'red'
+        corpo.style.backgroundColor = 'darkgray'
+        var d = window.document.getElementById('msg')
+        d.style.backgroundColor = 'red'
+        d.innerText = 'vai tomando'
+        var toma = window.document.querySelector('p#ppp')
+        toma.style.color = 'green'
     </script>
 </body>
 </html>
