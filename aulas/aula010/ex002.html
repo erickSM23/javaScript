@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando (DOM) document onject model</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>SOMANDO VALORES</h1>
+    <input type="number" name="texn1" id="texn1"> + 
+    <input type="number" name="texn2" id="texn2">
+    <input type="button" value="somar" onclick="somar()">
+    <br>
+    <div id="resultado">?</div>
+    <script>
+        function somar() {
+            var n1 = window.document.getElementById('texn1') 
+            var n2 = window.document.getElementById('texn2')
+            var resultado = window.document.getElementById('resultado') 
+            var valor1 = Number(n1.value)
+            var valor2 = Number(n2.value)
+            var soma = valor1 + valor2
+            resultado.innerText = `o resultado da soma dos valores ${valor1} e ${valor2} é de <strong>${soma}</strong>`
+        }
+    </script>
+</body>
+</html>
