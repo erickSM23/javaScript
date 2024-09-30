@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>documento do exercicio 4</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            font-size: 1.5em;
+            text-align: center; 
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>desafio de exercicio/desafio</h1>
+    digite o nome do seu país:<input type="text" name="txtn1" id="txtn1" placeholder="exemplo:estados unidos">
+    <input type="button" value="calcular" onclick="calcular()">
+    <div id="local">
+
+    </div>
+    <script>
+        function calcular() {
+            var país = window.document.getElementById('txtn1')
+            var p = String(país.value)
+            var texto = window.document.getElementById('local')
+            texto.innerHTML += `<p>(seu pais é o ${p})</p>`
+            if (p == 'brasil' || 'BRASIL') {
+                texto.innerHTML += `<p><u>você é brasileiro</u></p>`
+            } else {
+                texto.innerHTML += `<p><u>você é estrangeiro</u></p>`
+            }
+        }
+    </script>
+</body>
+</html>
