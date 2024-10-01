@@ -1,4 +1,5 @@
-var horas = 22
+var agora = new Date()
+var horas = agora.getHours()
 if (horas <= 6) {
     console.log(`agora são ${horas} da madrugada`)
 } else if (horas <= 11) {
