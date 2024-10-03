@@ -1,4 +1,4 @@
-var votação = 1
+var votação = 28
 console.log('CANDIDATOS E SEUS NUMEROS PARA VOTAÇÃO LOGO ABAIXO')
 console.log(' BOLSONARO (22)')
 console.log(' LULA (13)')

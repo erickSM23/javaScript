@@ -1,4 +1,4 @@
-var idade = 343534524
+var idade = 18
 if (idade < 16) {
     console.log('você não pode votar com essa idade')
 } else if (idade < 18) {
