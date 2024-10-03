@@ -37,6 +37,10 @@ main {
 
 }
 
+main > div#imagem {
+    background-image: url('ima');
+}
+
 header, footer {
     color: white;
     text-align: center;
