@@ -1,0 +1,1 @@
+window.alert('vai tomando segue plana desde a criação')
