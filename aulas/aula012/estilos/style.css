@@ -38,7 +38,12 @@ main {
 }
 
 main > div#imagem {
-    background-image: url('ima');
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    background: url("../imagens/noite.jpg") center center  no-repeat;
+    background-size: cover;
+    border-radius: 50%;
 }
 
 header, footer {
