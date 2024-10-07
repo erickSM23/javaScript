@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio de javaScript</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>titulo</h1>
+    </header>
+    <main id="principal">
+        <div> 
+            <p>
+               <label for="iano">ano de nascimento:</label> 
+               <input type="number" name="ano" id="iano">
+            </p>
+            <p>
+                sexo: 
+                <label for="masculino">masculino</label>
+                <input type="radio" name="sex" id="masculino" >
+
+                <label for="feminino">feminino</label>
+                <input type="radio" name="sex" id="feminino">   
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="resposta">
+            prencha os dados acima para ver os resultados
+        </div>
+        <div id="imagem">
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy;SITE CRIADO POR ERICK</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
