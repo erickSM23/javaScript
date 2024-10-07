@@ -11,7 +11,6 @@ PROPRIEDADES TIPOFRÁFICAS : Relacionadas ao texto (ex: font-family, font-size, 
 
 body {
     background-color: rgb(36, 36, 156);
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -30,6 +29,21 @@ main {
     background-color: white;
     border-radius: 10px;
 
+}
+
+div#resposta {
+    margin: 20px;
+}
+
+div#imagem {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    display: none;
+
+    background: url('../imagens/mulher_adulta.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
 }
 
 
