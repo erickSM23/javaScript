@@ -1,7 +1,7 @@
 
-var contador = 0
+var contador = 1
 
-while (contador <= 10000000) {
+while (contador <= 10) {
     console.log(`${contador}`)
-    contador = contador + 1000
+    contador++
 }
