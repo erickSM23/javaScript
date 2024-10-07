@@ -9,11 +9,6 @@ PROPRIEDADES TIPOFRÁFICAS : Relacionadas ao texto (ex: font-family, font-size, 
 */
 
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 body {
     background-color: rgb(36, 36, 156);
 
@@ -40,7 +35,7 @@ main {
 
 header, footer {
     color: white;
-    
+
     text-align: center;
 }
 
