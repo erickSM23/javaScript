@@ -9,9 +9,10 @@ function contar() {
         var co = Number(começo.value)
         var fi = Number(fim.value)
         var pa = Number(passo.value)
+        local.innerHTML = '...'
         if (co < fi) {
             for (var contador = co; contador <= fi; contador = contador + pa) {
-                local.innerHTML += `${contador}`
+                local.innerHTML += `${contador} `
             }
         }
     }
