@@ -6,7 +6,7 @@ function tabuada() {
         window.alert('porfavor difgite um numero valido')
     } else {
         numero = Number(n1.value)
-        local.innerHTML = null
+        local.innerHTML = ''
         for (var contador = 0; contador <= 10; contador ++) {
             soma = contador * numero
             local.innerHTML += `<p>${numero} X ${contador} = ${soma}</p>`

@@ -5,6 +5,7 @@ function contar() {
     var local = window.document.getElementById('local')
     if (começo.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
         window.alert('prencha tudo')
+        local.innerText = null
     } else {
         var co = Number(começo.value)
         var fi = Number(fim.value)
@@ -12,6 +13,11 @@ function contar() {
         local.innerHTML = '...'
         if (co < fi) {
             for (var contador = co; contador <= fi; contador = contador + pa) {
+                local.innerHTML += `${contador} `
+            }
+        }
+        if (co > fi) {
+            for(contador = co; contador >= fi; contador = contador - pa) {
                 local.innerHTML += `${contador} `
             }
         }
