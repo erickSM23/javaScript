@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*
+PROPIEDADES DE LAYOUT: Relacionadas à posição e tamanho (ex: margin, padding, display, position).
+
+PROPIEDADES DE ESTILO VISUAL: Relacionadas à cor, bordas, sombras (ex: background, color, border, box-shadow).
+
+PROPRIEDADES TIPOFRÁFICAS : Relacionadas ao texto (ex: font-family, font-size, line-height, text-align).
+*/
+
+html, body {
+    height: 96vh;
+    width: 99vw;
+    background-color: black;
+}
+
+body {
+    position: relative;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid rgb(0, 255, 0);
+}

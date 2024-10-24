@@ -1,4 +1,5 @@
 function soma(s1=10, s2=10) {
-    return s1 + s2
+    var soma = s1 * s2
+    return soma
 }
-console.log(soma(1, 1))
+console.log(soma(3, 1))
